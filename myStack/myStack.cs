@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace myStack
 {
-    public class Stack<T> : IStack<T>
+    public class myStack<T> : IStack<T>
     {
         private Node<T>? top;
 
         public int Count;
 
-        public Stack()
+        public myStack()
         {
             top = null;
         }
@@ -38,7 +38,7 @@ namespace myStack
         public T Pop()
         {
             if (top == null)
-                throw new Exception("Pila non valorizzata");
+                throw new Exception("Stack non valorizzato");
             
             T Data = top.Data;
             top = top.Next;
@@ -50,7 +50,7 @@ namespace myStack
         public T? Peek()
         {
             if (top == null)
-                throw new Exception("");
+                throw new Exception("Stack non valorizzato");
             
             return top.Data;
         }
