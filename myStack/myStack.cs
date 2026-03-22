@@ -11,7 +11,7 @@ namespace myStack
     {
         private Node<T>? top;
 
-        public int Count;
+        public int Count { get; private set; }
 
         public myStack()
         {
