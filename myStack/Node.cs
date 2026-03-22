@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QueueAndStack
+namespace myStack
 {
     internal class Node<T>
     {

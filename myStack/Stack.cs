@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QueueAndStack
+namespace myStack
 {
-    internal class Stack<T> : IStack<T>
+    public class Stack<T> : IStack<T>
     {
         private Node<T>? top;
 
