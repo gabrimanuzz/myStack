@@ -16,19 +16,13 @@ namespace myStack
         public myStack()
         {
             top = null;
+            Count = 0;
         }
 
         public virtual void Push(T Data)
         {
             Node<T>? newNode = new Node<T>(Data);
             
-            if (top == null)
-            {
-                top = newNode;
-                Count++;
-                return;
-            }
-
             newNode.Next = top;
             top = newNode;
 
