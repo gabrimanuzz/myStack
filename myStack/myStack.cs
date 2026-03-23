@@ -18,7 +18,7 @@ namespace myStack
             top = null;
         }
 
-        public void Push(T Data)
+        public virtual void Push(T Data)
         {
             Node<T>? newNode = new Node<T>(Data);
             
@@ -35,7 +35,7 @@ namespace myStack
             Count++;
         }
 
-        public T Pop()
+        public virtual T Pop()
         {
             if (top == null)
                 throw new Exception("Stack non valorizzato");
@@ -47,7 +47,7 @@ namespace myStack
             return Data;
         }
 
-        public T? Peek()
+        public virtual T? Peek()
         {
             if (top == null)
                 throw new Exception("Stack non valorizzato");
